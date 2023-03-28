@@ -11,13 +11,13 @@ def competition(U, C):
     if ((U == '石头' and C == '剪刀')
             or (U == '剪刀' and C == '布')
             or (U == '布' and C == '石头')):
-        PlaySound("E:\\Procedures\\Python\\Punches\\欧耶.wav", flags=1)
+        PlaySound("E:\\Procedures\\猜拳（python）\\欧耶.wav", flags=1)
         g.msgbox('—————结果—————\n\t你赢了！', '猜拳', '欧耶~')
     elif U == C:
-        PlaySound("E:\\Procedures\\Python\\Punches\\6.wav", flags=1)
+        PlaySound("E:\\Procedures\\猜拳（python）\\6.wav", flags=1)
         g.msgbox('—————结果—————\n\t平局！', '猜拳', '6')
     else:
-        PlaySound("E:\\Procedures\\Python\\Punches\\屑.wav", flags=1)
+        PlaySound("E:\\Procedures\\猜拳（python）\\屑.wav", flags=1)
         g.msgbox('—————结果—————\n\t你输了！', '猜拳', '焯！')
 
 
