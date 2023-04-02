@@ -29,7 +29,7 @@ while True:
     show(U, C)
     competition(U, C)
 
-    if g.ccbox("游戏结束！想再来一次嘛？", "提示", ("再来一次！", "退出，不玩了！")):
+    if g.ccbox("游戏结束！想再来一次嘛？", "提示", ["再来一次！", "退出，不玩了！"]):
         continue
     else:
         break
