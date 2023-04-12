@@ -4,20 +4,20 @@ from easygui import *
 
 
 def show(U, C):
-    msgbox('\t————猜拳过程————\n   电脑出了：%s \n   你出了：%s\n' % (C, U), '猜拳', '下一步')
+    msgbox('\t————猜拳过程————\n   电脑出了：%s \n   你出了：%s\n' % (C, U), '猜拳', 'OK')
 
 
 def competition(U, C):
     if ((U == '石头' and C == '剪刀')
             or (U == '剪刀' and C == '布')
             or (U == '布' and C == '石头')):
-        PlaySound("欧耶.wav", flags=1)
+        PlaySound("欧耶.wav", 1)
         msgbox('\t—————结果—————\n\t你赢了！', '猜拳', '欧耶~')
     elif U == C:
-        PlaySound("6.wav", flags=1)
+        PlaySound("6.wav", 1)
         msgbox('\t—————结果—————\n\t平局！', '猜拳', '6')
     else:
-        PlaySound("屑.wav", flags=1)
+        PlaySound("屑.wav", 1)
         msgbox('\t—————结果—————\n\t你输了！', '猜拳', '焯！')
 
 
